@@ -24,3 +24,6 @@ variable "zone_name"{
   default = "telugudevops.online"
 }
 
+variable "db_password"{
+  type = string
+}

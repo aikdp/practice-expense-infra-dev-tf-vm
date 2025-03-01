@@ -22,7 +22,7 @@ module "db" {
   db_name  = "transactions"
   username = "root"
   manage_master_user_password = false 
-  password = "ExpenseApp1"
+  password = var.db_password
   port     = "3306"
 
 #   iam_database_authentication_enabled = true

@@ -26,8 +26,8 @@ resource "null_resource" "backend" {
 
     connection {
         type     = "ssh"
-        user     = var.user
-        password = var.password
+        user     = var.user_name
+        password = var.my_password
         host     = module.backend.private_ip
     }
     provisioner "file" {
@@ -67,8 +67,8 @@ resource "null_resource" "backend_delete" {
   }
     connection {
         type     = "ssh"
-        user     = var.user
-        password = var.password
+        user     = var.user_name
+        password = var.my_password
         host     = module.backend.private_ip
      }
 #    provisioner "local-exec" {

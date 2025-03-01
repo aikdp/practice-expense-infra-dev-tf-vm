@@ -1,6 +1,6 @@
-password = "DevOps321"
+my_password = "DevOps321"
 
-user = "ec2-user"
+user_name = "ec2-user"
 
 #we should pass this ile in the command line:
 

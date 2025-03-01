@@ -22,11 +22,11 @@ variable "common_tags" {
   }
 }
 
-variable "password"{
+variable "my_password"{
   type = string
 }
 
-variable "user"{
+variable "user_name"{
   type = string
 }
 
