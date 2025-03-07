@@ -37,7 +37,7 @@ resource "null_resource" "frontend" {
     provisioner "remote-exec" {
         # Bootstrap script called with public_ip of each node in the cluster
         inline = [
-        "sudo chmod +x /tmp/${var.module_name}.sh",
+        "chmod +x /tmp/${var.module_name}.sh",
         "sudo sh /tmp/${var.module_name}.sh ${var.module_name} ${var.environment}"
         ]
     }
