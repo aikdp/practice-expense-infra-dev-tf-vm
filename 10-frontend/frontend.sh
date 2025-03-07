@@ -6,7 +6,7 @@ env=$2
 
 echo "Component is:$comp, Environment is: $env"
 
-sudo dnf install ansible -y
+sudo dnf install -y ansible
 
 ansible-pull -i localhost, -U https://github.com/aikdp/expense-ansible-tf-roles.git main.yaml -e component=$comp -e environment=$env
 
