@@ -1,5 +1,4 @@
 #!/bin/bash
-
 comp=$1
 env=$2
 echo "Component is:$comp, Environment is: $env"
