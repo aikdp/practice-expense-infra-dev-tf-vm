@@ -7,3 +7,5 @@ locals {
   # app_alb_http_listner_arn = data.aws_ssm_parameter.app_alb_http_listner_arn.value
   app_alb_target_group = data.aws_ssm_parameter.app_alb_target_group.value
 }
+
+

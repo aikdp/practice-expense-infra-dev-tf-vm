@@ -12,8 +12,8 @@ module "bastion" {
   # connection {
   #   host = module.bastion.private_ip    
   #   type = "ssh"
-  #   user = var.user
-  #   password = var.password
+  #   user = var.user_name
+  #   password = var.my_password
   # }
   # provisioner "remote-exec"{
   #   inline = [ "sudo dnf install mysql-server -y" ]
